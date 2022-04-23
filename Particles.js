@@ -9,7 +9,7 @@ setTimeout(() => {
  for (let i = 0; i < 20; i++) {
     const elem = document.createElement('div');
     elem.classList.add('particle')
-    elem.style.cssText = '';
+    elem.style.cssText = css;
     document.body.appendChild(elem);
   }
   })();
