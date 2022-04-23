@@ -9,26 +9,13 @@ setTimeout(() => {
  for (let i = 0; i < 20; i++) {
     const elem = document.createElement('div');
     elem.classList.add('particle')
-    elem.style.cssText = css;
-    document.body.appendChild(elem);
-  }
-  })();
-}, 5000);
-
-function sayText(text) {
-  console.log(text);
-}
-
-const css = `
-body {
+    elem.style.cssText = `body {
     background: #ecf3f3;
 }
-
 .particle {
 	position: absolute;
  	border-radius: 50%;
 }
-
 @for $i from 1 through 30 {
 	@keyframes particle-animation-#{$i} {
 		100% {
@@ -46,6 +33,12 @@ body {
 		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
 		background: hsl(random(360), 70%, 50%);
 	}
-}
-`
+}`;
+    document.body.appendChild(elem);
+  }
+  })();
+}, 5000);
 
+function sayText(text) {
+  console.log(text);
+}
