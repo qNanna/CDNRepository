@@ -795,3 +795,4 @@ body {
     .swagger-ui .wrapper { padding: 0 0px }
     .swagger-ui .btn.authorize { border-color: #ffffff; color: #ffffff }
     .swagger-ui .btn.authorize svg { fill: #ffffff }
+    .swagger-ui .topbar { display: none }`
