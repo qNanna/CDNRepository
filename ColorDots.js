@@ -1,16 +1,14 @@
-// console.clear()
-// document.querySelector(".info").addEventListener('load', function(e){
-//     console.log('Info loaded ', e);
-// });
-
+console.clear()
 console.log('Starting create particles');
+const injectionTarget = document.querySelector("#swagger-ui");
 setTimeout(() => { 
   (function(){
  for (let i = 0; i < 20; i++) {
     const elem = document.createElement('div');
     elem.classList.add('particle')
     elem.style.cssText = css;
-    document.body.appendChild(elem);
+    injectionTarget.appendChild(elem);
+    // document.body.appendChild(elem);
   }
   })();
 }, 5000);
